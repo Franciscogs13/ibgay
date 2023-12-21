@@ -15,10 +15,10 @@ function verificar(){
     res.innerHTML = `Sua idade é ${idade} ano(s).<br>`
     if (fsex[0].checked){
       genero = 'Masculine'
-       if (idade == 0 && idade <= 10) {
+       if (idade >= 0 && idade <= 10) {
         res.innerHTML += ('Você é uma criança viada!')
         img.setAttribute('src' , 'crianca.png')
-      }else if (idade > 10 && idade <= 20){
+      }else if (idade <= 20){
         res.innerHTML += ('Você é um twink fã de taylor swift!')
         img.setAttribute('src' , 'adolescente.png')
       }else if (idade > 20){
@@ -27,11 +27,11 @@ function verificar(){
       }
     }else if (fsex[1].checked){
       genero = 'Feminine'
-      if (idade == 0 && idade <= 10) {
+      if (idade >= 0 && idade <= 10) {
         res.innerHTML += ('É uma sapa mirim')
         img.setAttribute('src', 'crianca2.png')
       
-      }else if (idade > 10 && idade <= 20){
+      }else if (idade <= 20){
         res.innerHTML += ('Sapadrão')
         img.setAttribute('src', 'sapa2.png')
       
